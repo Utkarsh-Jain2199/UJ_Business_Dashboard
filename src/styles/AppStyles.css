@@ -1,0 +1,27 @@
+@import './UtilityClasses.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.dark body {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+
+.dark #root {
+  background-color: #000000 !important;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .dark body,
+  .dark #root,
+  .dark html {
+    background-color: #000000 !important;
+  }
+}
