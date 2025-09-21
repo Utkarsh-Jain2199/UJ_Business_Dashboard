@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { updateTransactions } from '../../store/ordersSlice';
+import { updateTransactions } from '../store/ordersSlice';
 
 const DataTable = ({ transactionList, selectedRowIds, handleSelectAllRows, handleRowSelection }) => {
   const storeDispatcher = useDispatch();
